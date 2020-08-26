@@ -1,0 +1,56 @@
+@import '@/assets/scss/colors.scss';
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  min-width: 1000px;
+  background: $background-secundary;
+  margin-bottom: 20px;
+}
+.cart__title {
+  text-align: center;
+}
+.cart__table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cart__table__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+}
+.cart__table__item {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 10px;
+  text-align: left;
+  width: 300px;
+}
+.item--title-space {
+  width: 150px;
+}
+.item--text {
+  font-weight: 700;
+}
+.item--text-green {
+  font-weight: 700;
+  color: $color-text-green;
+}
+.item--border-top {
+  margin: 10px 0;
+  border-top: 1px solid black;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}

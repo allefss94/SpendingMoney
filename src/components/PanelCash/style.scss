@@ -1,0 +1,11 @@
+@import '@/assets/scss/colors.scss';
+
+.panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  background: $background-green;
+  color: $color-text-secundary;
+  margin-bottom: 10px;
+}

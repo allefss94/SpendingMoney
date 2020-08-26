@@ -1,28 +1,30 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <header class="banner">
+      <h1 class="banner__title">Desafio Perfect Pay</h1>
+    </header>
+    <main class="container">
+      <Profile />
+      <PanelCash />
+      <Products />
+      <Cart />
+    </main>
+    <footer class="banner">
+      <h1 class="banner__title title--align-center">Feito com muita dedicação por Allef Sousa</h1>
+    </footer>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
+import Profile from "@/components/Profile/Profile.vue";
+import PanelCash from "@/components/PanelCash/PanelCash.vue";
+import Products from "@/components/Products/Products.vue";
+import Cart from "@/components/Cart/Cart.vue";
 export default {
   name: "App",
-  components: {
-    HelloWorld
-  }
+  components: { Profile, PanelCash, Products, Cart }
 };
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style src="./style.scss" lang="scss" scoped>
 </style>

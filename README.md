@@ -1,4 +1,4 @@
-# spend-marks-money
+# spend-bills-money
 
 ## Project setup
 ```
