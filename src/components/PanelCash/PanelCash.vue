@@ -1,7 +1,7 @@
 <template>
   <div class="panel">
     <transition name="fade" mode="out-in">
-      <h1>{{totalMoney.replace('.', ',') }}</h1>
+      <h1>R${{totalMoney.replace('.', ',') }}</h1>
     </transition>
   </div>
 </template>
