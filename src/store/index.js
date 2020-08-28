@@ -97,7 +97,7 @@ export default new Vuex.Store({
   mutations: {
     increment(state, payload) {
       const itemIndex = state.cart.findIndex((item) => item.id === payload.id);
-      state.products.quantity = payload.quantity;
+      
 
       itemIndex >= 0
         ? (state.cart[itemIndex].quantity = payload.quantity)
@@ -105,12 +105,12 @@ export default new Vuex.Store({
     },
     decrement(state, payload) {
       const itemIndex = state.cart.findIndex((item) => item.id === payload.id);
-      state.products.quantity = payload.quantity;
+      
 
       if (itemIndex >= 0) {
         state.cart[itemIndex].quantity = payload.quantity;
         if (state.cart[itemIndex].quantity === 0) {
-          state.cart.splice(itemIndex);
+          state.cart.splice(itemIndex, 1);
         }
       }
     },
