@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <header class="banner">
-      <h1 class="banner__title">Desafio Perfect Pay</h1>
+      <h1 class="banner__title">Desafio Front-end Jr.</h1>
     </header>
     <main class="container">
       <Profile />
